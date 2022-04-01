@@ -1,0 +1,12 @@
+<%- include('./partials/head.ejs') %>
+<h1><%=title%></h1>
+<a href="javascript:history.back()">back</a>
+<form action="/match/:id" method="POST">
+    <% matches.forEach(item => { %>
+    <input type="text" name="newMatch" placeholder="add new match" value="<%=item.match[0]%>" required />
+    V
+    <input type="text" name="newMatch" placeholder="add new match" value="<%=item.match[1]%>" required />
+    <% }) %>
+    <button type="submit"> Update </button>
+</form>
+<%- include('./partials/footer') %>
