@@ -47,19 +47,18 @@ app.get("/", (req, res) => {
 
 
 app.get('/match/:id', (req, res) => {
-    console.log(newItem);
     newItem = matches.find(item => item.id === id)
     res.render('match', {
         title: 'Testing',
         newItem: newItem
     })
-    console.log(newItem);
 })
 
 
 app.post('/match/:id', (req, res) => {
     const newMatch = req.body.newMatch
-    newArr = newItem.map(object => {
+    console.log(typeof newItem);
+    newArr = Object.keys(newItem).map(object => {
         if (object.id == id) {
             return {
                 ...object,

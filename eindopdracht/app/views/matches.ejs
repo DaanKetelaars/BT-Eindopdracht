@@ -1,7 +1,5 @@
 <%- include('./partials/head.ejs') %>
 <h1><%=title%></h1>
-<% matches.forEach(item => { %>
-<p><%=item.match[0]%> V <%=item.match[1]%></p>
-<% }) %>
+<p><%=newArr.item.match[0]%> V <%=newArr.item.match[1]%></p>
 <a href="javascript:history.back()">back</a>
 <%- include('./partials/footer') %>
