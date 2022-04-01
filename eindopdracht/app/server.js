@@ -3,6 +3,9 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config()
 const bodyParser = require('body-parser')
+const {
+    v4: uuidv4
+} = require('uuid');
 
 const app = express();
 
@@ -19,14 +22,17 @@ app.use(bodyParser.json())
 
 let match = {}
 let matches = []
-let id = Math.random() * 10;
+let id;
 let newMatch = {}
-let test = {}
+let newArr;
+let newItem = []
+
 
 
 
 app.post('/', (req, res) => {
     newMatch = req.body.newMatch;
+    id = uuidv4()
     matches.push({
         match: Object.assign({}, newMatch),
         id: id
@@ -41,31 +47,33 @@ app.get("/", (req, res) => {
 
 
 app.get('/match/:id', (req, res) => {
+    console.log(newItem);
+    newItem = matches.find(item => item.id === id)
     res.render('match', {
-        title: 'Detail',
-        matches: matches
+        title: 'Testing',
+        newItem: newItem
     })
+    console.log(newItem);
 })
 
 
 app.post('/match/:id', (req, res) => {
-    newMatch = req.body.newMatch;
-
-    bestaandeShit = JSON.parse(informatie.json);
-
-    bestaandeShit.includes(vetteFnc => {
-        if (id = id)
-    })
-    matches.push({
-        match: Object.assign({}, newMatch),
-        id: id
+    const newMatch = req.body.newMatch
+    newArr = newItem.map(object => {
+        if (object.id == id) {
+            return {
+                ...object,
+                match: newMatch
+            };
+        }
+        return object;
     });
 })
 
 app.get('/matches', (req, res) => {
     res.render('matches', {
         title: 'Matches',
-        matches: matches
+        matches: newArr
     })
 })
 

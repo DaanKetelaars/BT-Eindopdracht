@@ -7,13 +7,10 @@
     <input type="text" name="newMatch" placeholder="add new match" required>
     <button type="submit"> Add Match </button>
     <h2> Added Matches </h2>
-    <% matches.forEach(item => { %>
+    <% matches.map(item => { %>
     <a href="match/<%=item.id%>">
         <p><%=item.match[0]%> V <%=item.match[1]%></p>
     </a>
     <% }) %>
-    <!-- <% for( var i = 0; i < matches.length; i++){ %>
-    <li><input type="checkbox" name="check" value="" /> <%= matches[i] %></li>
-    <% } %> -->
 </form>
 <%- include('./partials/footer') %>
