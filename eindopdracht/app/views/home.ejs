@@ -1,5 +1,5 @@
 <%- include('./partials/head.ejs') %>
-<h1>Home</h1>
+<h1><%=title%></h1>
 <h2> Simple Todo app </h2>
 <form action="/" method="POST">
     <input type="text" name="newMatch" placeholder="add new match" required>
@@ -7,7 +7,7 @@
     <input type="text" name="newMatch" placeholder="add new match" required>
     <button type="submit"> Add Match </button>
     <h2> Added Matches </h2>
-    <% matches.map(item => { %>
+    <% newData.forEach(item => { %>
     <a href="match/<%=item.id%>">
         <p><%=item.match[0]%> V <%=item.match[1]%></p>
     </a>

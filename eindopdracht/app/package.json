@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon node ./bin/www"
   },
@@ -14,7 +15,10 @@
     "dotenv": "^16.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.1",
+    "method-override": "^3.0.0",
+    "node-fetch": "^3.2.3",
     "node-localstorage": "^2.2.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "uuidv4": "^6.2.13"
   }
 }

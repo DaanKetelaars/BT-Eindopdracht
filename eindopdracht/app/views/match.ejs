@@ -1,10 +1,13 @@
 <%- include('./partials/head.ejs') %>
 <h1><%=title%></h1>
-<a href="javascript:history.back()">back</a>
-<form action="/match/:id" method="POST">
+<a href="/">back</a>
+<form action="/match/<%=newItem.id%>" method="POST" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="_method" value="PUT">
+
     <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[0]%>" required />
     V
     <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[1]%>" required />
+    <p><%=newItem.id%></p>
     <button type="submit"> Update </button>
 </form>
 <%- include('./partials/footer') %>
