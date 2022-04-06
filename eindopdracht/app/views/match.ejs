@@ -5,9 +5,12 @@
     <input type="hidden" name="_method" value="PUT">
 
     <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[0]%>" required />
+    <input type="number" name="newScore" placeholder="add score" value="<%=newItem.score[0]%>" />
+
     V
     <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[1]%>" required />
-    <p><%=newItem.id%></p>
+    <input type="number" name="newScore" placeholder="add score" value="<%=newItem.score[1]%>" />
+
     <button type="submit"> Update </button>
 </form>
 <%- include('./partials/footer') %>

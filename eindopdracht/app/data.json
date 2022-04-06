@@ -1,16 +1,35 @@
 [
     {
         "match": [
-            "Barca",
-            "Ajax"
+            "Galatasaray",
+            "Besiktas"
         ],
-        "id": "13d95e1a-356f-4a4b-bad8-06bf0283019e"
+        "score": [
+            "200",
+            "0"
+        ],
+        "id": "1313fc27-3e8c-4f80-b7bd-25581f416332"
     },
     {
         "match": [
-            "s`bf",
-            "Test"
+            "Barca",
+            "Bayern"
         ],
-        "id": "601756f7-3499-432d-9bd7-a782c3cd9283"
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "855c4fd3-aff6-412f-8c17-c50a1decf7bc"
+    },
+    {
+        "match": [
+            "Barca",
+            "Ajax"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "8a538ecf-a356-424d-aece-6f4405adbecc"
     }
 ]

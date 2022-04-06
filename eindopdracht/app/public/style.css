@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Heebo-Regular";
+    src: url("Heebo-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: "Heebo-Bold";
+    src: url("Heebo-Bold.woff") format("woff")
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Heebo-Regular', Arial, Helvetica, sans-serif;
+    background: #f9f8f8;
+    color: #000;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Heebo-Bold', Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Heebo-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* END HEADER */
+
+/* HOME PAGE */
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.formHome {
+    border: 1px solid #ddd;
+    background: #FFF;
+    padding: 3rem;
+    border-radius: 5px;
+    height: 100%;
+    max-height: 500px;
+}
+
+.formHome h2 {
+    margin-top: 3rem;
+}
+
+.formHome div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+.formHome div input[name="newScore"] {
+    align-self: flex-end;
+}
+
+.formHome div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.formHome div div label,
+input {
+    align-self: flex-start;
+}
+
+.formHome input {
+    border: 1px solid #ddd;
+    background: #f9f8f8;
+    padding: 1rem;
+}
+
+.formHome input[name="newMatch"] {
+    width: 75%;
+}
+
+.formHome input[name="newScore"] {
+    width: 25%;
+    text-align: center;
+}
+
+.formHome button {
+    text-align: center;
+    border: none;
+    background: #1971ff;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.addedMatches {
+    border: 1px solid #ddd;
+    background: #FFF;
+    padding: 3rem;
+    border-radius: 5px;
+    height: 100%;
+    max-height: 500px;
+}
+
+.addedMatches ul li a {
+    text-decoration: none;
+    color: #1971ff;
+}
+
+.addedMatches ul li a:visited {
+    color: #6d19ff;
+}
+
+.addedMatches ul li {
+    padding: .5rem;
+    border: 1px solid #ddd;
+    list-style: none;
+    background: #f9f8f8;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* END HOME PAGE */

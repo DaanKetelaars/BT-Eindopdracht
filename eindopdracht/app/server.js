@@ -34,15 +34,17 @@ app.use(methodOverride(function (req, res) {
 
 
 app.post('/', (req, res) => {
-    let id;
     let newMatch = req.body.newMatch
+    let newScore = req.body.newScore
     let match;
 
     let matches = [];
     const game = ({
         match: newMatch,
+        score: newScore,
         id: uuidv4()
     })
+    console.log(game);
     const matchesStr = fs.readFileSync('data.json', 'utf8');
     matches = JSON.parse(matchesStr)
 
@@ -61,7 +63,7 @@ app.get("/", (req, res) => {
     console.log(newData);
     res.render('home', {
         newData,
-        title: 'Home',
+        title: 'Voeg een match toe',
     });
 });
 
@@ -90,7 +92,6 @@ app.put('/match/:id', (req, res) => {
     let {
         id
     } = req.params;
-    let newItem = []
     let updateData = []
 
     const data = fs.readFileSync('data.json', 'utf8');
@@ -98,14 +99,26 @@ app.put('/match/:id', (req, res) => {
 
     updateData = newData;
     const foundIndex = updateData.findIndex(x => x.id == id);
-    updateData[foundIndex].match = req.body.newMatch;
+    updateData[foundIndex].match = req.body.newMatch
+    updateData[foundIndex].score = req.body.newScore;
+
 
     fs.writeFileSync('data.json', JSON.stringify(updateData, null, 4))
     console.log(id);
+    console.log(updateData);
 
     res.redirect(`/match/${id}`)
 })
 
+
+app.get("/matches", (req, res) => {
+    const data = fs.readFileSync('data.json', 'utf8');
+    const newData = JSON.parse(data)
+    res.render('matches', {
+        newData,
+        title: 'Matches',
+    });
+});
 
 
 app.listen(port, () => {

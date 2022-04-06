@@ -1,16 +1,31 @@
 <%- include('./partials/head.ejs') %>
-<h1><%=title%></h1>
-<h2> Simple Todo app </h2>
-<form action="/" method="POST">
-    <input type="text" name="newMatch" placeholder="add new match" required>
-    <p>V</p>
-    <input type="text" name="newMatch" placeholder="add new match" required>
-    <button type="submit"> Add Match </button>
-    <h2> Added Matches </h2>
-    <% newData.forEach(item => { %>
-    <a href="match/<%=item.id%>">
-        <p><%=item.match[0]%> V <%=item.match[1]%></p>
-    </a>
-    <% }) %>
-</form>
+<section class="home">
+    <form action="/" method="POST" class="formHome">
+        <h1><%=title%></h1>
+        <div>
+            <div>
+                <label>Thuis</label>
+                <input type="text" name="newMatch" placeholder="add new match" required>
+            </div>
+            <input type="number" name="newScore" placeholder="add score" value="0">
+        </div>
+        <div>
+            <div>
+                <label>Uit</label>
+                <input type="text" name="newMatch" placeholder="add new match" required>
+            </div>
+            <input type="number" name="newScore" placeholder="add score" value="0">
+        </div>
+        <button type="submit"> Add Match </button>
+    </form>
+    <section class="addedMatches">
+        <h2> Added Matches </h2>
+        <ul>
+            <% newData.forEach(item => { %>
+            <li><a href="match/<%=item.id%>"><%=item.match[0]%> <%=item.score[0]%> V <%=item.score[1]%>
+                    <%=item.match[1]%></a></li>
+            <% }) %>
+        </ul>
+    </section>
+</section>
 <%- include('./partials/footer') %>
