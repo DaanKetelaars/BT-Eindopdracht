@@ -32,8 +32,12 @@ app.use(methodOverride(function (req, res) {
 }))
 
 
+app.get("/", (req, res) => {
+    res.render('login')
+});
 
-app.post('/', (req, res) => {
+
+app.post('/home', (req, res) => {
     let newMatch = req.body.newMatch
     let newScore = req.body.newScore
     let match;
@@ -44,7 +48,6 @@ app.post('/', (req, res) => {
         score: newScore,
         id: uuidv4()
     })
-    console.log(game);
     const matchesStr = fs.readFileSync('data.json', 'utf8');
     matches = JSON.parse(matchesStr)
 
@@ -54,13 +57,12 @@ app.post('/', (req, res) => {
         matches.push(game);
         fs.writeFileSync('data.json', JSON.stringify(matches, null, 4))
     }
-    res.redirect('/')
+    res.redirect('/home')
 })
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
     const data = fs.readFileSync('data.json', 'utf8');
     const newData = JSON.parse(data)
-    console.log(newData);
     res.render('home', {
         newData,
         title: 'Voeg een match toe',
@@ -103,8 +105,6 @@ app.put('/match/:id', (req, res) => {
 
 
     fs.writeFileSync('data.json', JSON.stringify(updateData, null, 4))
-    console.log(id);
-    console.log(updateData);
 
     res.redirect(`/match/${id}`)
 })
