@@ -1,16 +1,21 @@
 <%- include('./partials/head.ejs') %>
-<h1><%=title%></h1>
-<a href="/">back</a>
-<form action="/match/<%=newItem.id%>" method="POST" enctype="application/x-www-form-urlencoded">
-    <input type="hidden" name="_method" value="PUT">
+<section class="detail">
+    <a href="/">
+        &#10094; Terug</a>
+    <form action="/match/<%=newItem.id%>" method="POST" enctype="application/x-www-form-urlencoded" class="formDetail">
+        <input type="hidden" name="_method" value="PUT">
+        <div>
+            <div>
+                <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[0]%>" required />
+                <input type="number" name="newScore" placeholder="add score" value="<%=newItem.score[0]%>" />
+            </div>
+            <div>
+                <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[1]%>" required />
+                <input type="number" name="newScore" placeholder="add score" value="<%=newItem.score[1]%>" />
+            </div>
+        </div>
+        <button type="submit"> Update </button>
+    </form>
+</section>
 
-    <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[0]%>" required />
-    <input type="number" name="newScore" placeholder="add score" value="<%=newItem.score[0]%>" />
-
-    V
-    <input type="text" name="newMatch" placeholder="add new match" value="<%=newItem.match[1]%>" required />
-    <input type="number" name="newScore" placeholder="add score" value="<%=newItem.score[1]%>" />
-
-    <button type="submit"> Update </button>
-</form>
 <%- include('./partials/footer') %>

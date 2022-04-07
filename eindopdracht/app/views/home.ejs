@@ -16,10 +16,10 @@
             </div>
             <input type="number" name="newScore" placeholder="add score" value="0">
         </div>
-        <button type="submit"> Add Match </button>
+        <button type="submit"> Voeg match toe </button>
     </form>
     <section class="addedMatches">
-        <h2> Added Matches </h2>
+        <h2> Toegevoegde Matches </h2>
         <ul>
             <% newData.forEach(item => { %>
             <li><a href="match/<%=item.id%>"><%=item.match[0]%> <%=item.score[0]%> V <%=item.score[1]%>

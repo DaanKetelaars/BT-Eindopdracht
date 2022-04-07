@@ -1,10 +1,51 @@
-<%- include('./partials/head.ejs') %>
-<h1><%=title%></h1>
-<a href="javascript:history.back()">back</a>
+<!DOCTYPE html>
+<html lang="en">
 
-<% newData.forEach(item => { %>
-<a href="match/<%=item.id%>">
-    <p><%=item.match[0]%> <%=item.score[0]%> V <%=item.score[1]%> <%=item.match[1]%></p>
-</a>
-<% }) %>
-<%- include('./partials/footer') %>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Score</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">!SCORE¡</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="allMatches">
+            <h1><%=title%></h1>
+            <ul>
+                <% newData.forEach(item => { %>
+                <li>
+                    <p>
+                        <span>
+                            <%=item.match[0]%>
+                        </span>
+                        <span>
+                            <%=item.score[0]%>
+                        </span>
+                    </p>
+                    <p>VS</p>
+                    <p>
+                        <span>
+                            <%=item.match[1]%>
+                        </span>
+                        <span>
+                            <%=item.score[1]%>
+                        </span>
+                    </p>
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+        <%- include('./partials/footer') %>

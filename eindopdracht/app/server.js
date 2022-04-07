@@ -82,7 +82,6 @@ app.get('/match/:id', (req, res) => {
     }
 
     res.render('match', {
-        title: 'Testing',
         newItem: newItem
     })
 })
