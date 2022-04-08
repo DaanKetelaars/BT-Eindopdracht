@@ -12,7 +12,6 @@ const port = process.env.PORT || 3000
 
 const app = express();
 
-
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
@@ -76,6 +75,8 @@ app.get('/match/:id', (req, res) => {
     let newItem = []
 
 
+
+
     const data = fs.readFileSync('data.json', 'utf8');
     const newData = JSON.parse(data);
 
@@ -84,7 +85,7 @@ app.get('/match/:id', (req, res) => {
     }
 
     res.render('match', {
-        newItem: newItem
+        newItem: newItem,
     })
 })
 
@@ -103,9 +104,7 @@ app.put('/match/:id', (req, res) => {
     updateData[foundIndex].match = req.body.newMatch
     updateData[foundIndex].score = req.body.newScore;
 
-
     fs.writeFileSync('data.json', JSON.stringify(updateData, null, 4))
-
     res.redirect(`/match/${id}`)
 })
 

@@ -6,7 +6,7 @@
         ],
         "score": [
             "5",
-            "0"
+            "3"
         ],
         "id": "ad78f3ae-b841-4ebe-b6a1-aa9d5ea0b45b"
     },
@@ -20,5 +20,104 @@
             "0"
         ],
         "id": "2c314897-a40c-4267-9a5f-85cafe36b3e8"
+    },
+    {
+        "match": [
+            "Bayern",
+            "Ajax"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "730f3925-9a8f-4749-9e37-dac0ee73cdf9"
+    },
+    {
+        "match": [
+            "Bayern",
+            "Ajax"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "b8d3edc0-0361-40ef-a00d-04092542e2d6"
+    },
+    {
+        "match": [
+            "Ajax",
+            "PSV"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "326f006f-ce7f-4b50-ae90-47ce7c1e08ba"
+    },
+    {
+        "match": [
+            "Ajax",
+            "Bayern"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "0415c092-c5d2-4e43-ae4c-a0c959170b23"
+    },
+    {
+        "match": [
+            "ai`nsvf",
+            "zdfkvhfx"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "7d9933fa-4481-42da-ac3c-5182ac05f241"
+    },
+    {
+        "match": [
+            "sfjvnfx",
+            "ldkjfnbdf"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "150ac860-b19b-4abb-a9d5-7129e1b47ca3"
+    },
+    {
+        "match": [
+            "zcgjkbngx",
+            "zdgjbdcg"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "2231f48f-afe5-442a-97fd-167c83969ff8"
+    },
+    {
+        "match": [
+            "Bayern",
+            "Ajax"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "bf2c7ba1-f418-4020-9635-5f94bc6781e3"
+    },
+    {
+        "match": [
+            "Zalaegerszegi Torna Egylet",
+            "Zalaegerszegi Torna Egylet"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "227c9e53-dfab-43dd-af5b-f3f1fc49bef8"
     }
 ]
