@@ -86,7 +86,7 @@ PORT = 8081
 
 - [git](https://git-scm.com/)
 - [json](https://www.json.org/json-en.html)
-- [NodeJS](node.jshttps://nodejs.org)
+- [NodeJS](https://node.jshttps://nodejs.org)
 - [ExpressJS](https://expressjs.com/)
 
 ## Meta
