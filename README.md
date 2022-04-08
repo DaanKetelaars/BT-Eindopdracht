@@ -4,7 +4,11 @@
 ![example workflow](https://img.shields.io/github/last-commit/DaanKetelaars/BT-Eindopdracht?style=flat-square)
 ![example workflow](https://img.shields.io/github/repo-size/DaanKetelaars/BT-Eindopdracht?style=flat-square)
 
+
+## Live DEMO
 https://browsertech-cmd.herokuapp.com/
+
+
 ## Description
 Voor het vak Browser Technologies gaat het voornamelijk over progressive ehancement. Hoe kunnen wij het web beter maken voor iedereen. Niet alleen de mensen op de jusite devices en browsers. Nee de mensen zonder die fancy dingen moeten ook een goede experience krijgen. Voor dit vak kon je kiezen uit verschillende cases. Zelf ben ik gegaan voor de case van het scoreboard. Dit leek mij wel een leuke en uitdagende case (dat was het ook). Aan deze case werk je tot het vak klaar is. De app die je bouwt moet kunnen werken met de verschillende lagen (functional/reliable, usable & pleasurable), maar ook zonder deze lagen moet jou app het goed kunnen doen. Een leuke challenge voor deze 3 weken!
 
