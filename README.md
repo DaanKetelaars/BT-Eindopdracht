@@ -18,10 +18,10 @@ Voor het vak Browser Technologies gaat het voornamelijk over progressive ehancem
 
 
 ## Functional/reliable, Usable & Pleasurable.
-
+<img src="progressive-ehancement.jpg" alt="3 lagen progressive enhancement" />
 
 ## Features/Browser Tech used
-Ik heb voor mijn app de @support gebruikt in mijn CSS. Mijn app maakt niet echt gebruik van client side JS, persoonlijk omdat ik dit niet nodig vind voor nu en de app zonder ook prima werkt. Maar de @support gebruik ik wel en vooral voor flexbox. Want soms kan dat niet overal werken. Ook maak ik gebruik van Grid (grid is nog minder ondersteund dan flexbox). Door even een tijdje rond gekeken te hebben op caniuse merkte ik dat het toch slim was dus om een fallback te bouwen. Ik heb mijn app eerst opgebouwd met oude vertrouwde code (float, position etc.) en daarna in @support heb ik flex en grid toegevoegd. Mijn app is niet erg ingewikkeld qua CSS dus dit was niet heel erg om om te bouwen. Het is wel tof om te zien dat @support zo goed werkt en het is ook handig om te weten dat die functie bestaat binnen CSS.
+Ik heb voor mijn applicatie niet echt support toegevoegd om features te verhelpen die niet werken. Ik zag namelijk dat bijvoorbeeld @support voor in je CSS op meerdere browsers nog niet volledig wordt ondersteund. Daarom ben ik gegaan voor CSS die eigenlijk overal zou moeten werken. Mijn JS is extra en niet echt van belang, dus als deze uitstaat dan werkt de app ook nog.
 
 
 ## Tested in 4 browsers
