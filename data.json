@@ -119,5 +119,16 @@
             "0"
         ],
         "id": "227c9e53-dfab-43dd-af5b-f3f1fc49bef8"
+    },
+    {
+        "match": [
+            "Barca",
+            "Bayern"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "f1dfbff9-3193-4059-9dfe-fc0b23f3f94d"
     }
 ]

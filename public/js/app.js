@@ -7,9 +7,10 @@ window.onload = function () {
     }
 }
 
-
-// on submit of update show alert for user to be certain to update match
-const form = document.querySelector(".formDetail");
-form.addEventListener('submit', function () {
-    if (confirm('Weet je zeker dat je de match wil updaten?')) {} else {}
-});
+// // on submit of update show alert for user to be certain to update match
+if (window.location.href == 'http://localhost:8081/match/') {
+    const form = document.querySelector(".formDetail");
+    form.addEventListener('submit', function () {
+        if (confirm('Weet je zeker dat je de match wil updaten?')) {} else {}
+    })
+}
