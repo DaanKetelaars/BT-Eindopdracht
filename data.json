@@ -1,11 +1,11 @@
 [
     {
         "match": [
-            "Barca",
+            "BarcaADHCGADHY",
             "Bayern"
         ],
         "score": [
-            "5",
+            "6",
             "3"
         ],
         "id": "ad78f3ae-b841-4ebe-b6a1-aa9d5ea0b45b"
@@ -130,5 +130,27 @@
             "0"
         ],
         "id": "f1dfbff9-3193-4059-9dfe-fc0b23f3f94d"
+    },
+    {
+        "match": [
+            "`isfvyfs",
+            "`kfhvbhx`bvhxfbjhbadfhjbv uaidfbuvobjfvb`sfojbvjsfbvofe"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "e502b5d9-6f81-41af-bdd3-9a0101820db6"
+    },
+    {
+        "match": [
+            "dhbv`jhvf",
+            "zfhjvhxf"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "9aba05f2-e39c-4a58-8685-69704ccda7ae"
     }
 ]

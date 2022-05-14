@@ -7,6 +7,9 @@ window.onload = function () {
     }
 }
 
+var href = window.location.href.split('/')
+href[href.length - 1];
+
 // // on submit of update show alert for user to be certain to update match
 if (window.location.href == 'http://localhost:8081/match/') {
     const form = document.querySelector(".formDetail");
