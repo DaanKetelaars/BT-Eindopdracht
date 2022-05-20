@@ -1,26 +1,23 @@
 <%- include('./partials/head.ejs') %>
+<div class="popup">
+    Match is gewijzigd
+</div>
+
 <section class="allMatches">
     <h1><%=title%></h1>
-    <ul>
+    <ul class="matches">
         <% newData.forEach(item => { %>
-        <li>
-            <p>
-                <span>
-                    <%=item.match[0]%>
-                </span>
-                <span>
-                    <%=item.score[0]%>
-                </span>
-            </p>
+        <li class="match">
+            <p class="club"><%= item.match[0]%></p>
+            <img src="" alt="club logo of: <%= item.match[0]%>"
+                onerror="javascript:this.src='/assets/default-team-logo-500.png'">
+            <p class="score"><%= item.score[0]%></p>
             <p>VS</p>
-            <p>
-                <span>
-                    <%=item.match[1]%>
-                </span>
-                <span>
-                    <%=item.score[1]%>
-                </span>
-            </p>
+            <p class="score"><%= item.score[1]%></p>
+            <img src="" alt="club logo of: <%= item.match[1]%>"
+                onerror="javascript:this.src='/assets/default-team-logo-500.png'">
+
+            <p class="club"><%= item.match[1]%></p>
         </li>
         <% }) %>
     </ul>

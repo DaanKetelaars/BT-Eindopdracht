@@ -1,124 +1,47 @@
 [
     {
         "match": [
-            "BarcaADHCGADHY",
+            "Barca",
+            "Ajax"
+        ],
+        "score": [
+            "0",
+            "0"
+        ],
+        "id": "14752d8c-e698-43bd-b665-1691ea8fd417"
+    },
+    {
+        "match": [
+            "Dortmund",
             "Bayern"
         ],
         "score": [
-            "6",
-            "3"
+            "40",
+            "50"
         ],
-        "id": "ad78f3ae-b841-4ebe-b6a1-aa9d5ea0b45b"
+        "id": "24990c1a-292c-449d-b0d4-72d793062045"
     },
     {
         "match": [
-            "Ajax",
-            "PSV"
+            "zklsfuvu`s",
+            "Cposurhvu`s"
         ],
         "score": [
             "0",
             "0"
         ],
-        "id": "2c314897-a40c-4267-9a5f-85cafe36b3e8"
+        "id": "f5071e57-e8cd-4e56-a7f1-42b8480a2e4a"
     },
     {
         "match": [
-            "Bayern",
+            "Borussia Dortmund",
             "Ajax"
         ],
         "score": [
             "0",
             "0"
         ],
-        "id": "730f3925-9a8f-4749-9e37-dac0ee73cdf9"
-    },
-    {
-        "match": [
-            "Bayern",
-            "Ajax"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "b8d3edc0-0361-40ef-a00d-04092542e2d6"
-    },
-    {
-        "match": [
-            "Ajax",
-            "PSV"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "326f006f-ce7f-4b50-ae90-47ce7c1e08ba"
-    },
-    {
-        "match": [
-            "Ajax",
-            "Bayern"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "0415c092-c5d2-4e43-ae4c-a0c959170b23"
-    },
-    {
-        "match": [
-            "ai`nsvf",
-            "zdfkvhfx"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "7d9933fa-4481-42da-ac3c-5182ac05f241"
-    },
-    {
-        "match": [
-            "sfjvnfx",
-            "ldkjfnbdf"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "150ac860-b19b-4abb-a9d5-7129e1b47ca3"
-    },
-    {
-        "match": [
-            "zcgjkbngx",
-            "zdgjbdcg"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "2231f48f-afe5-442a-97fd-167c83969ff8"
-    },
-    {
-        "match": [
-            "Bayern",
-            "Ajax"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "bf2c7ba1-f418-4020-9635-5f94bc6781e3"
-    },
-    {
-        "match": [
-            "Zalaegerszegi Torna Egylet",
-            "Zalaegerszegi Torna Egylet"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "227c9e53-dfab-43dd-af5b-f3f1fc49bef8"
+        "id": "ea950428-8a66-424a-96ff-23c2288dce1f"
     },
     {
         "match": [
@@ -127,30 +50,8 @@
         ],
         "score": [
             "0",
-            "0"
+            "3"
         ],
-        "id": "f1dfbff9-3193-4059-9dfe-fc0b23f3f94d"
-    },
-    {
-        "match": [
-            "`isfvyfs",
-            "`kfhvbhx`bvhxfbjhbadfhjbv uaidfbuvobjfvb`sfojbvjsfbvofe"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "e502b5d9-6f81-41af-bdd3-9a0101820db6"
-    },
-    {
-        "match": [
-            "dhbv`jhvf",
-            "zfhjvhxf"
-        ],
-        "score": [
-            "0",
-            "0"
-        ],
-        "id": "9aba05f2-e39c-4a58-8685-69704ccda7ae"
+        "id": "060b5405-6805-4eee-ab9f-12c26be67832"
     }
 ]

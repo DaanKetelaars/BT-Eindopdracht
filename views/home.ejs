@@ -1,4 +1,7 @@
 <%- include('./partials/head.ejs') %>
+<div class="popup">
+    Match is toegevoegd
+</div>
 <section class="home">
     <form action="/home" method="POST" class="formHome">
         <h1><%=title%></h1>
@@ -7,25 +10,33 @@
                 <label>Thuis</label>
                 <input type="text" name="newMatch" placeholder="add new match" required>
             </div>
-            <input type="number" name="newScore" placeholder="add score" value="0">
+            <input type="number" name="newScore" placeholder="add score" value="0" readonly>
         </div>
         <div>
             <div>
                 <label>Uit</label>
                 <input type="text" name="newMatch" placeholder="add new match" required>
             </div>
-            <input type="number" name="newScore" placeholder="add score" value="0">
+            <input type="number" name="newScore" placeholder="add score" value="0" readonly>
         </div>
         <button type="submit"> Voeg match toe </button>
     </form>
     <section class="addedMatches">
         <h2> Toegevoegde Matches </h2>
         <ul>
+            <span>
+
+            </span>
             <% newData.forEach(item => { %>
-            <li><a href="match/<%=item.id%>"><%=item.match[0]%> <%=item.score[0]%> V <%=item.score[1]%>
-                    <%=item.match[1]%></a></li>
+            <li><a href="match/<%=item.id%>"><%=item.match[0]%> <%=item.score[0]%> V
+                    <%=item.score[1]%>
+                    <%=item.match[1]%></a>
+            </li>
             <% }) %>
         </ul>
     </section>
 </section>
+
+
+
 <%- include('./partials/footer') %>

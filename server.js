@@ -7,6 +7,9 @@ import bodyParser from "body-parser";
 import {
     v4 as uuidv4
 } from 'uuid';
+import fetch from 'node-fetch';
+
+
 
 const port = process.env.PORT || 3000
 
@@ -31,12 +34,15 @@ app.use(methodOverride(function (req, res) {
 }))
 
 
+
+
 app.get("/", (req, res) => {
     res.render('login')
 });
 
 
 app.post('/home', (req, res) => {
+
     let newMatch = req.body.newMatch
     let newScore = req.body.newScore
     let match;
@@ -101,7 +107,7 @@ app.put('/match/:id', (req, res) => {
 
     updateData = newData;
     const foundIndex = updateData.findIndex(x => x.id == id);
-    updateData[foundIndex].match = req.body.newMatch
+    updateData[foundIndex].match = req.body.newMatch;
     updateData[foundIndex].score = req.body.newScore;
 
     fs.writeFileSync('data.json', JSON.stringify(updateData, null, 4))
