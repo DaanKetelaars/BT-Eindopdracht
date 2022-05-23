@@ -1,11 +1,11 @@
 // refresh matches page at every 5 seconds to show updated matches
-// window.onload = function () {
-//     if (window.location.href.indexOf('/matches') > -1) {
-//         setTimeout(function () {
-//             location.reload(true);
-//         }, 5000);
-//     }
-// }
+window.onload = function () {
+    if (window.location.href.indexOf('/matches') > -1) {
+        setTimeout(function () {
+            location.reload(true);
+        }, 5000);
+    }
+}
 const updateBtn = document.getElementById('update');
 const popUp = document.querySelector('.popup');
 
@@ -48,6 +48,6 @@ for (let i = 0; i < matches.length; i++) {
     const name2 = clubName2.innerHTML
     const teamName2 = name2.replace(/[\n\r]+|[\s]{2,}/g, ' ').trim()
     const teamNameDash2 = teamName2.split(" ").join("-")
-    img2.src = `https://uefaclubs.com/images/${teamNameDash2}.png`
+    img2.src = `https://uefaclubs.com/images/'${teamNameDash2}.png`
 
 }
